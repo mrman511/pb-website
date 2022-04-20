@@ -1,0 +1,161 @@
+main{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(150deg, #474c5070, #666c6e70, #a3acb170), url(../images/keyboard-background.jpeg);
+  //background-image: url(../images/keyboard-background.jpeg);
+  background-size: cover;
+}
+
+header{
+  background-image: linear-gradient(110deg, #474c50, #929a9e, #a3acb1);
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  
+  h1{
+    margin: 0 2%;
+  }
+
+  .profile-links{
+    height: 90%;
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    
+    a{
+      display: flex;
+      height: 100%;
+      width: 6em;
+      padding-right: 10%;
+      justify-content: space-around;
+      align-items: flex-end;
+
+      .icon{
+        position: absolute;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .menu-button{
+    background-image: linear-gradient(to bottom right, #474c50, #676f74);
+    height: 100%;
+    width: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .icon{
+      position: absolute;
+    }
+  }
+
+  .menu-button:hover{
+    cursor: pointer;
+    .icon{
+      height: 3em;
+    }
+  }
+
+  .icon {
+    height: 2em;
+    color: #42484b;
+  }
+
+  .icon:hover{
+    cursor: pointer;
+    height: 3em;
+  }
+
+}
+
+.drop-menu{
+  position: absolute;
+  top: var(--menu-top);
+  height: 60vh;
+  width: 30%;
+  min-width: 300px;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  animation: drop-menu 1.5s ease-in 1s 1 normal none;
+  z-index: 0;
+
+  ul{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    li{
+      list-style: none;
+      padding: 10% 0;
+      border-top: 1px solid #42484b;
+      border-bottom: 1px solid #42484b;
+    }
+
+    li:hover{
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+}
+
+// drop menu button transition
+.toggle-drop-menu-enter{
+  
+}
+.toggle-drop-menu-enter-active{
+  
+  transform: rotate(180deg);
+  //transition: height 100ms linear;
+  transition: transform 200ms linear 400ms
+}
+.toggle-drop-menu-enter-done{
+  transform: rotate(180deg);
+}
+.toggle-drop-menu-exit{
+  transform: rotate(180deg);
+}
+.toggle-drop-menu-exit-active{
+  transform: rotate(0deg);
+  //transition: height 100ms linear;
+  transition: transform 200ms linear 400ms
+}
+.toggle-drop-menu-exit-done{
+  transform: rotate(0deg);
+}
+
+// drop menu Transition
+.show-drop-menu-enter{
+  top: -500px;
+}
+.show-drop-menu-enter-active{
+  top: 15vh;
+  transition: top 300ms ease-in;
+}
+.show-drop-menu-enter-done{
+  top: 15vh;
+}
+.show-drop-menu-exit{
+  top: 15vh;
+}
+.show-drop-menu-exit-active{
+  top: var(--menu-top);
+  transition: top 300ms ease-out;
+}
+.show-drop-menu-exit-done{
+  top: -500px;
+}
+
+footer{
+  height: 20vh;
+  width: 100%;
+  background: linear-gradient(170deg, #2c2e30, #555a5f, #5b6166);
+}
