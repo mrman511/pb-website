@@ -19,6 +19,7 @@ const db = new Pool(dbParams);
 db.connect();
 
 const knowledgeRoutes = require('./routes/knowledge');
+const projectRoutes = require('./routes/projects');
 
 app.use(cors())
 
@@ -41,6 +42,7 @@ app.use(Express.static('public'));
 
 // data base routes
 app.use('/knowledge', knowledgeRoutes(db));
+app.use('/projects', projectRoutes(db));
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server listening on ${PORT}`)
