@@ -14,7 +14,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   
   h1{
     margin: 0 2%;
@@ -84,7 +84,7 @@ header{
   color: white;
   font-size: 2rem;
   animation: drop-menu 1.5s ease-in 1s 1 normal none;
-  z-index: 0;
+  z-index: 1;
 
   ul{
     margin: 0;
