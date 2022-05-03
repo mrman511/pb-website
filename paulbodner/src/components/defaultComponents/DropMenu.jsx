@@ -7,7 +7,7 @@ export default function DropMenu(props) {
     <div className='drop-menu'>
       <ul>
         <li>About Me</li>
-        <li>Skills and Knowledge</li>
+        <li onClick={ () => transition("KNOWLEDGE") } >Skills and Knowledge</li>
         <li>Finished Projects</li>
         <li onClick={ () => transition("CONTACT") } >Contact</li>
       </ul>
