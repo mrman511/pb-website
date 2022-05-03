@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS technologies CASCADE;
+
+CREATE TABLE technologies(
+  id SERIAL PRIMARY KEY NOT NULL,
+  project_id INTEGER REFERENCES projects(id) ON DELETE CASCADE,
+  name VARCHAR(50) NOT NULL,
+  link VARCHAR(255),
+  image_file_name VARCHAR(255)
+)
