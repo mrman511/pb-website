@@ -1,25 +1,4 @@
-const { faMarsDouble } = require('@fortawesome/free-solid-svg-icons');
 const axios = require('axios');
-
-// export default function getKnowledge(setLocalMode) {
-//   const knowledgeArray = [];
-//   axios.get('http://localhost:8081/knowledge')
-//   .then((res) => {
-//     const promises = [];
-//     for (let item of res.data){
-//       promises.push(axios.get(`http://localhost:8081/knowledge/${ item.id }`))
-//       knowledgeArray.push(item)
-//     }
-//     Promise.all(promises)
-//     .then((response) => {
-//       for (let i in knowledgeArray){
-//         knowledgeArray[i].frameworks = response[i].data;
-//       }
-//       return knowledgeArray;
-//     })
-//     .catch(err => console.log('There has been an ERROR: ', err));
-//   });
-// }
 
 const getLanguages = () => {
   return axios.get('http://localhost:8081/knowledge');

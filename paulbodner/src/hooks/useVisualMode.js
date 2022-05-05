@@ -5,7 +5,9 @@ export default function useVisualMode(initial, toggleLocalMode) {
 
   const transition = (newMode) => {
     setMode(newMode);
-    toggleLocalMode();
+    if (toggleLocalMode){
+      toggleLocalMode();
+    }
   }
 
   return { mode, transition }
