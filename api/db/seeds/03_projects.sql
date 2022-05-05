@@ -8,7 +8,7 @@ INSERT INTO projects (
   finished
   )
 VALUES (
-  'pill-popper-api.png',
+  'pill-popper-app.png',
   'Pill Popper',
   'https://nimble-starburst-c30e53.netlify.app/',
   'https://github.com/mrman511/pill-popper',

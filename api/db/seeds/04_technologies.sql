@@ -33,7 +33,7 @@ VALUES (
   1,
   'PostgreSQL',
   'https://www.postgresql.org/',
-  'pqsql-icon.png'
+  'pgsql-icon.png'
 ),(
   1,
   'Open FDA',

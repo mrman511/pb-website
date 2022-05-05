@@ -1,0 +1,138 @@
+.project-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project {
+    margin: 2em 0;
+    max-height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(150deg, #0260ad, #929a9e, #0260ad);
+    border-radius: 2em;
+
+    .project-header {
+      border-bottom: 2px outset #929a9e;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-left: 20%;
+        text-decoration: none;
+
+        h2 {
+          width: 200px;
+          margin: 0;
+          color: black;
+        }
+      }
+    }
+    
+    .project-header:hover > a h2 {
+      color: #42484b;
+    }
+
+    .project-body {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1em;
+
+      .project-info {
+        width: auto;
+
+        a {
+          display: block;
+        }
+        .icon {
+          height: 2em;
+          margin: 1em;
+          color: #42484b;
+        }
+
+        .icon:hover {
+          height: 3em;
+          margin: .5em;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        margin-top: .5em;
+        height: 350px;
+        border-radius: 1em;
+      }
+    }
+  }
+
+  //project info
+  .project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info {
+      width: 90%;
+
+      .icon {
+        position: absolute;
+        margin-top: 1em;
+        margin-right: 1em;
+        height: 2em;
+      }
+
+      .icon:hover {
+        height: 2.5em;
+        margin-top: .75em;
+        cursor: pointer;
+      }
+
+      p {
+        margin-left: 2.5em;
+      }
+
+      h5 {
+        margin: 1em;
+      }
+    }
+
+    .tech {
+
+      img{
+        height: 2em;
+      }
+
+      .link:hover {
+        margin: 0;
+        cursor: pointer;
+        img {
+          height: 3em;
+        }
+      }
+    }
+
+    .deploy {
+
+      h6 {
+        margin: 0;
+        margin-bottom: .5em;
+      }
+
+      img {
+        height: 3em;
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+      
+      .link {
+        margin: .5em;
+      }
+    }
+  }
+}

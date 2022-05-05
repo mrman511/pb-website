@@ -1,17 +1,19 @@
 INSERT INTO deploys (
   project_id,
-  front,
-  front_image_file_name,
-  front_link,
-  back,
-  back_image_file_name,
-  back_link
+  name,
+  image_file_name,
+  link,
+  type
 ) VALUES (
   1,
   'Netlify',
   'netlify-icon.png',
   'https://www.netlify.com/',
+  'Front-end'
+), (
+  1,
   'Heroku',
   'heroku-icon.png',
-  'https://www.heroku.com'
+  'https://www.heroku.com',
+  'Back-end'
 );

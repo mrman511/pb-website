@@ -32,7 +32,6 @@ export default function Default() {
         <DropMenu transition={ transition } />
       </CSSTransition>
       < Main mode={ mode } />
-      <img src="https://www.google.com/" />
       < Footer />
     </main>
   );
