@@ -1,0 +1,12 @@
+@media only screen and (min-width: 900px){
+
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .project {
+      margin-top: 3em;
+    }
+  }
+}

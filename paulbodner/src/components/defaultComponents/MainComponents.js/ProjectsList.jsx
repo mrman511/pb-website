@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
-import './projectList.scss';
+import './styles/projectList.scss';
+import './styles/projectMedia.scss'
 
 import { useVisualMode } from '../../../hooks/useVisualMode'
 
@@ -18,7 +19,6 @@ export default function ProjectsList({ projects }) {
       primaryMedia={ project.primaryMedia }
     />
   );
-
 
   return (
     <section className="project-list">

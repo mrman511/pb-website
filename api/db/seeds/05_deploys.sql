@@ -16,4 +16,16 @@ INSERT INTO deploys (
   'heroku-icon.png',
   'https://www.heroku.com',
   'Back-end'
+), (
+  2,
+  'Netlify',
+  'netlify-icon.png',
+  'https://www.netlify.com/',
+  'Front-end'
+), (
+  2,
+  'Heroku',
+  'heroku-icon.png',
+  'https://www.heroku.com',
+  'Back-end'
 );

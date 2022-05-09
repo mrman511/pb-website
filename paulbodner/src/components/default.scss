@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Merriweather:ital,wght@1,900&family=Play&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
 main{
-  height: 100%;
   width: 100%;
   background: linear-gradient(150deg, #474c5070, #666c6e70, #a3acb170), url(../images/keyboard-background.jpeg);
   //background-image: url(../images/keyboard-background.jpeg);
   background-size: cover;
+
+  
 }
 
 header{
@@ -17,7 +20,10 @@ header{
   z-index: 2;
   
   h1{
+    font-family: 'Play', serif;
+    font-weight: 100;
     margin: 0 2%;
+    font-size: 2.5em;
   }
 
   .profile-links{
@@ -82,7 +88,7 @@ header{
   min-width: 300px;
   background-color: black;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5em;
   animation: drop-menu 1.5s ease-in 1s 1 normal none;
   z-index: 1;
 
@@ -108,9 +114,6 @@ header{
 }
 
 // drop menu button transition
-.toggle-drop-menu-enter{
-  
-}
 .toggle-drop-menu-enter-active{
   
   transform: rotate(180deg);
@@ -159,3 +162,4 @@ footer{
   width: 100%;
   background: linear-gradient(170deg, #2c2e30, #555a5f, #5b6166);
 }
+

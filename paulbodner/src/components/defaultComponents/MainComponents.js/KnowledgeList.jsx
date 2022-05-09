@@ -2,6 +2,8 @@ import React from "react";
 
 import KnowledgeItem from "./KnowledgeItem";
 
+import "./styles/knowledgeList.scss"
+import "./styles/knowledgeMedia.scss"
 
 export default function KnowledgeList({ knowledge }) {
 
@@ -14,7 +16,7 @@ export default function KnowledgeList({ knowledge }) {
     />)
 
   return (
-    <article>
+    <article className="knowledge">
       { parsedKnowledge }
     </article>
   );
