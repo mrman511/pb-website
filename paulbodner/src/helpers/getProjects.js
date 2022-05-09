@@ -2,13 +2,13 @@ const axios = require('axios');
 const { getLanguages } = require('./getknowledge');
 
 const getProjects = () => {
-  return axios.get('http://localhost:8081/projects')
+  return axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + '/projects')
 }
 
 const getTechnologies = (projects) => {
   const promises = [];
   for (let item of projects.data){
-    promises.push(axios.get(`http://localhost:8081/projects/${ item.id }/technologies`))
+    promises.push(axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + `/projects/${ item.id }/technologies`))
   }
   return Promise.all(promises)
 }
@@ -16,7 +16,7 @@ const getTechnologies = (projects) => {
 const getDeploys = (projects) => {
   const promises = [];
   for (let item of projects.data){
-    promises.push(axios.get(`http://localhost:8081/projects/${ item.id }/deploys`))
+    promises.push(axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + `/projects/${ item.id }/deploys`))
   }
   return Promise.all(promises)
 }
