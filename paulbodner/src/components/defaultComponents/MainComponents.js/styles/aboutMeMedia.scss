@@ -1,0 +1,11 @@
+@media only screen and (min-width: 900px) {
+  .about{
+    height: 65vh;
+
+    .about-me {
+      background-image: linear-gradient(45deg, #474c507c, #929a9e83, #a3acb173);
+      min-width: 750px;
+      font-size: 1.4em;
+    }
+  }
+}

@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import Contact from "./Contact";
 import KnowledgeList from "./KnowledgeList";
 import ProjectsList from "./ProjectsList";
+import AboutMe from "./AboutMe";
 
 import { organizeKnowledge, getFrameworks, getLanguages } from "../../../helpers/getknowledge"
 import { getProjects, getTechnologies, getDeploys, organizeProjects } from "../../../helpers/getProjects"
 
-import './main.scss'
+import './styles/main.scss'
+import './styles/mainMedia.scss'
 
 export default function Main(props) {
   const { mode } = props;
@@ -40,6 +42,7 @@ export default function Main(props) {
       { mode === "CONTACT" && < Contact /> }
       { mode === "KNOWLEDGE" && < KnowledgeList knowledge={ knowledge } />}
       { mode === "PROJECTS" && < ProjectsList projects={ finishedProjects } /> }
+      { mode === "ABOUT" && < AboutMe /> }
     </section>
   );
 }

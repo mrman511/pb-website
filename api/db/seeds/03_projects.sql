@@ -19,4 +19,13 @@ VALUES (
    information on pharmaceuticals.',
   'Mobile Device',
   false
+), (
+  'paul-bodner.png',
+  'PaulBodner.com',
+  'https://paulbodner.com',
+  'https://github.com/mrman511/pb_website',
+  'My website create to organise all the information of my skills, and knowledge,
+   as a web developer, as well as a showcase for my previous projects.',
+  'responsive design',
+  true
 );

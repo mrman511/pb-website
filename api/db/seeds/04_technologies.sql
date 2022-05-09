@@ -9,12 +9,12 @@ VALUES (
   'React',
   'https://reactjs.org/',
   'react-icon.png'
-),(
+), (
   1,
   'Express',
   'https://expressjs.com/',
   'express-icon.png'
-),(
+), (
   1,
   'Google Maps',
   'https://developers.google.com/maps',
@@ -24,12 +24,12 @@ VALUES (
   'Pusher Notifications',
   'https://pusher.com/?utm_source=google_ads&utm_medium=homepage&utm_campaign=comp_brand_search&gclid=Cj0KCQjwpcOTBhCZARIsAEAYLuXaXpozI9jNBkQPdlvgU7VUlU151aL0ZN_I740i9ApHojjIKn4yBkcaAltJEALw_wcB',
   'pusher-icon.png'
-),(
+), (
   1,
   'Twilio SMS',
   'https://www.twilio.com/sms',
   'twilio-icon.png'
-),(
+), (
   1,
   'PostgreSQL',
   'https://www.postgresql.org/',
@@ -39,4 +39,19 @@ VALUES (
   'Open FDA',
   'https://open.fda.gov/',
   'fda-icon.png'
+), (
+  2,
+  'React',
+  'https://reactjs.org/',
+  'react-icon.png'
+), (
+  2,
+  'Express',
+  'https://expressjs.com/',
+  'express-icon.png'
+), (
+  2,
+  'PostgreSQL',
+  'https://www.postgresql.org/',
+  'pgsql-icon.png'
 );

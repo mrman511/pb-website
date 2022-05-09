@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import './default.scss';
 import { CSSTransition } from 'react-transition-group'
+
+import './default.scss';
+import './defaultMedia.scss';
 
 import Header from './defaultComponents/Header';
 import DropMenu from './defaultComponents/DropMenu';
