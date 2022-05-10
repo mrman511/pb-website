@@ -1,11 +1,11 @@
 const axios = require('axios');
 const { getLanguages } = require('./getknowledge');
 
-const getProjects = () => {
+export const getProjects = () => {
   return axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + '/projects')
 }
 
-const getTechnologies = (projects) => {
+export const getTechnologies = (projects) => {
   const promises = [];
   for (let item of projects.data){
     promises.push(axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + `/projects/${ item.id }/technologies`))
@@ -13,7 +13,7 @@ const getTechnologies = (projects) => {
   return Promise.all(promises)
 }
 
-const getDeploys = (projects) => {
+export const getDeploys = (projects) => {
   const promises = [];
   for (let item of projects.data){
     promises.push(axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + `/projects/${ item.id }/deploys`))
@@ -21,7 +21,7 @@ const getDeploys = (projects) => {
   return Promise.all(promises)
 }
 
-const organizeProjects = (projects, technologies, deploys) => {
+export const organizeProjects = (projects, technologies, deploys) => {
   const projectsArray = [];
   for (let i in projects.data) {
     projects.data[i].technologies = technologies[i].data;
@@ -30,5 +30,3 @@ const organizeProjects = (projects, technologies, deploys) => {
   }
   return projectsArray;
 }
-
-module.exports = { getProjects, getTechnologies, getDeploys, organizeProjects };
