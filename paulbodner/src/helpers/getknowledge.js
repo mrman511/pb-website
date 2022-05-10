@@ -1,10 +1,10 @@
 const axios = require('axios');
 
-const getLanguages = () => {
+export const getLanguages = () => {
   return axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + "/knowledge");
 }
 
-const getFrameworks = (languages) => {
+export const getFrameworks = (languages) => {
   const promises = [];
     for (let item of languages.data){
       promises.push(axios.get((process.env.REACT_APP_PB_API || 'http://localhost:8081') + `/knowledge/${ item.id }`))
@@ -12,7 +12,7 @@ const getFrameworks = (languages) => {
   return Promise.all(promises);
 }
 
-const organizeKnowledge = (languages, frameworks) => {
+export const organizeKnowledge = (languages, frameworks) => {
   if (languages.data && frameworks.length > 0){
     const knowledgeArray = [];
     for (let i in languages.data){
@@ -25,4 +25,4 @@ const organizeKnowledge = (languages, frameworks) => {
   }
 }
 
-module.exports = { getLanguages, getFrameworks, organizeKnowledge };
+//module.exports = { getLanguages, getFrameworks, organizeKnowledge };
