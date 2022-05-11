@@ -57,6 +57,13 @@
     border-radius: .5em;
     box-shadow: 1px 3px 3px black;
   }
+
+  .error {
+    position: absolute;
+    margin: 0;
+    color: rgb(175, 0, 0);
+    top: 3.5em;
+  }
 }
 
 .email-status {
@@ -75,5 +82,35 @@
   .status-container {
     width: 300px;
     height: 300px;
+  }
+}
+
+.email-confirm {
+  margin-top: 3em;
+  min-width: 400px;
+  width: 60%;
+  height: 50vh;
+  background: linear-gradient(150deg, #0260ad, #929a9e, #0260ad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em;
+  border: 3px solid #0260ad;
+  border-style: outset;
+
+  .confirmation {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+      font-size: 2.5em;
+    }
+    
+    p {
+      font-size: 1.5em;
+      margin: .25em 0;
+    }
   }
 }
