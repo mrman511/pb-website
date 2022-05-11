@@ -1,9 +1,16 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import Form from './contactComponents/Form';
+import Status from './contactComponents/Status';
+
 import './styles/contact.scss'
 
+import useVisualMode from '../../../hooks/useVisualMode';
+
 export default function Contact() {
+  const { mode, transition } = useVisualMode("STATUS")
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,20 +28,8 @@ export default function Contact() {
 
   return (
     <article>
-      <form ref={form} onSubmit={sendEmail}>
-        <div>
-          <label>Name: </label>
-          <input type="text" name="user_name" className='input-area' />
-        </div>
-        <div>
-          <label>Email: </label>
-          <input type="email" name="user_email" className='input-area' />
-        </div>
-        <div className='message'>
-          <textarea name="message" className='input-area' />
-        </div>
-        <button type="submit" >SEND</button>
-      </form>
+      { mode === "FORM" && < Form sendEmail={ sendEmail } form={ form } /> }
+      { mode === "STATUS" && < Status /> }
     </article>
   );
 };

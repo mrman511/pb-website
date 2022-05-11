@@ -4,6 +4,7 @@ import { CSSTransition } from 'react-transition-group'
 
 import './default.scss';
 import './defaultMedia.scss';
+import './status.scss';
 
 import Header from './defaultComponents/Header';
 import DropMenu from './defaultComponents/DropMenu';
