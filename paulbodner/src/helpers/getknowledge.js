@@ -24,5 +24,3 @@ export const organizeKnowledge = (languages, frameworks) => {
     console.log('Incorrect type of data entered into organize knowledge')
   }
 }
-
-//module.exports = { getLanguages, getFrameworks, organizeKnowledge };
