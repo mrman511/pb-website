@@ -28,4 +28,14 @@ VALUES (
    as a web developer, as well as a showcase for my previous projects.',
   'responsive design',
   true
+), (
+  'devsearch.png',
+  'DevSearch',
+  'https://paul-devsearch.herokuapp.com/',
+  'https://github.com/mrman511/devSearch',
+  'Created for Udemy course Python Django - The Complete Course. DevSearch is created from the ground up with
+   the Python framework Django. Devsearch includes User Authentication, password recovery, user projects, reviews,
+   in site Messaging, and page pragnation.',
+  'responsive design',
+  true
 );

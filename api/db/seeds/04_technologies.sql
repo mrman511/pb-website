@@ -54,4 +54,19 @@ VALUES (
   'PostgreSQL',
   'https://www.postgresql.org/',
   'pgsql-icon.png'
+),(
+  3,
+  'Python3',
+  'https://www.python.org',
+  'python.png'
+),(
+  3,
+  'Django',
+  'https//:www.djangoproject.com',
+  'django.png'
+),(
+  3,
+  'Amazon Web Services',
+  'https//:aws.amazon.com',
+  'aws.png'
 );
