@@ -10,11 +10,15 @@ INSERT INTO frameworks (language_id, name, icon_url, testing) VALUES
 (1, 'Socket.io', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg', false),
 (1, 'WS', NULL , false);
 
+-- Python frameworks
+INSERT INTO frameworks (language_id, name, icon_url, testing) VALUES
+(2, 'Django', '../src/images/django.png', false);
+
 -- ruby frameworks
 INSERT INTO frameworks (language_id, name, icon_url, testing) VALUES
-(2, 'Rails', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg', false);
+(3, 'Rails', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg', false);
 
 -- database frameworks
 INSERT INTO frameworks (language_id, name, icon_url, testing) VALUES
-(3, 'Postgres SQL', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', false),
-(3, 'SQLite', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', false)
+(4, 'Postgres SQL', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', false),
+(4, 'SQLite', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', false)

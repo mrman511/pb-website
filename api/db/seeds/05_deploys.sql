@@ -28,4 +28,10 @@ INSERT INTO deploys (
   'heroku-icon.png',
   'https://www.heroku.com',
   'Back-end'
+), (
+  3,
+  'Heroku',
+  'heroku-icon.png',
+  'https://www.heroku.com',
+  'Back-end'
 );
